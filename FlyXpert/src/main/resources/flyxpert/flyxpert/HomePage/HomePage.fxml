@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="800" prefWidth="1536" style="-fx-border-radius: 4px;" stylesheets="@../../../SystemGlobal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flyxpert.flyxpert.User.HomePageController">
+    <children>
+        <ImageView fitHeight="500.0" fitWidth="1536.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true">
+            <image>
+                <Image url="@HomePageBG.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="10.0" layoutY="30.0">
+            <image>
+                <Image url="@logo2.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="FlyXpertLabel" layoutX="120.0" layoutY="10.0" prefHeight="93.0" prefWidth="400.0" style="-fx-text-alignment: center;" text="Turkish Airlines" textAlignment="CENTER" wrapText="true">
+        </Label>
+        <HBox layoutX="1200.0" layoutY="30.0" spacing="20.0">
+            <children>
+                <Button fx:id="homePageSignInButton" mnemonicParsing="false" onAction="#homePageOnSignIn" onMouseEntered="#onSignInButtonHoverEnter" onMouseExited="#onSignInButtonHoverExit" prefHeight="48.0" prefWidth="100.0" style="-fx-background-color: #FFF; -fx-border-color: #F90808; -fx-border-radius: 4px;" text="Sign In" textFill="#F90808">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="homePageSignUpButton" mnemonicParsing="false" onAction="#homePageOnSignUp" onMouseEntered="#onSignUpButtonHoverEnter" onMouseExited="#onSignUpButtonHoverExit" prefHeight="48.0" prefWidth="100.0" style="-fx-background-color: #F90808; -fx-border-radius: 4px;" text="Sign Up" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="578.0" layoutY="154.0" prefHeight="244.0" prefWidth="500.0" style="-fx-bold: 800;" text="Welcome" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="64.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.9725" green="0.0314" blue="0.1216" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.9725" green="0.4510" blue="0.5608" opacity="0.8999999761581421" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        
+        <Label fx:id="signUpSuccessLabel" layoutY="616.0" prefHeight="17.0" prefWidth="1537.0" style="-fx-alignment: center;" textAlignment="CENTER">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
+

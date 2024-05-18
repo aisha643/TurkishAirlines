@@ -1,0 +1,10 @@
+#FlyXpertLabel{
+    -fx-text-fill: linear-gradient(to right, #f42222, #f27d7d);
+    -fx-font-size: 40;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+}
+
+.label{
+    -fx-font-family: System;
+}
